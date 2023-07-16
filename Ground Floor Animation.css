@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+.floor-map {
+  position: relative;
+  width: 1300px;
+  height: 300px;
+}
+
+.floor-map-image {
+  width: 100%;
+  height: auto;
+}
+
+.animation-element {
+  position:absolute;
+  top: 69.5%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 13px;
+  background-color: #454242;
+  animation: moveAnimation 10s infinite linear;
+}
+
+@keyframes moveAnimation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-50%, -50%) translateX(232px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(232px) translateY(-120px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translateX(232px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+

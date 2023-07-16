@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.floor-map {
+  position: relative;
+  width: 1300px;
+  height: 300px;
+}
+
+.floor-map-image {
+  width: 100%;
+  height: auto;
+}
+
+.animation-element {
+  position:absolute;
+  top: 88%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 15px;
+  background-color: #454242;
+  animation: moveAnimation 10s infinite linear;
+}
+
+@keyframes moveAnimation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    transform: translate(-50%, -50%) translateX(240px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateX(240px) translateY(-150px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translateX(240px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

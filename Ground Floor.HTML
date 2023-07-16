@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ground Floor</title>
+	<link href="Ground Floor.CSS" rel="stylesheet"/>
+	<link href="Ground Floor Animation.css" rel="stylesheet"/>
+</head>
+	
+<body>
+	
+	<center>
+<div class="header" id="myHeader">
+  <h2>Computing Department</h2>
+</div>
+</center>
+	
+	<br><br>
+	<h1> Floor Plan Ground Floor</h1>
+	
+	<p>Click on each floor to view the floor plan</p>
+	
+	<div id="dog">
+		<a href="Ground Floor.HTML">Ground Floor</a></div>
+	
+	<div id="fish">
+	<a href="Ground Floor 1st.html">1st Floor</a></div> 
+	
+	 <div id="tiger"> 
+		 <a href="Ground Floor 2nd.html">2nd Floor</a></div>
+	
+<br><br>
+	<div class="floor-map">
+  <img src="Floor Ground FloorPlan.png" alt="Floor Map Image" class="floor-map-image">
+		<div class="animation-element"></div>
+		
+			<br><br>
+		<!-- Image Style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 125%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #A7855C;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 125%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+</style>
+		
+<h2>Ground Floor Pictures</h2>
+<p>A few pictures for room, class and lab at Ground Floor.</p>
+
+		<center>
+<div class="container">
+  <img src="GF Cafe.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Cafe FCVAC</div>
+  </div>
+		</div>
+		
+		<br>
+		<div class="container">
+  <img src="GF Studio Multimedia.jpg" alt="Second Image" class="image">
+  <div class="overlay">
+    <div class="text">Studio Multimedia</div>
+  </div>
+</div>
+		<br>
+		<div class="container">
+  <img src="GF BS1.jpg" alt="Third Image" class="image">
+  <div class="overlay">
+    <div class="text">Bilik Seminar 1</div>
+  </div>
+</div>
+		</center>
+		<br><br>
+<div id="cat">
+	<h2>LEGEND</h2>
+	<ul class="rabbit">
+		<li><a> <img src="icon toilet.png" alt="toilet" width="57" height="43"> RESTROOM</a></li>
+	  <li><a> <img src="icon cafe.png" alt="cafe" width="56" height="47">CAFE</a></li>
+	</ul>
+	</div>
+</body>
+</html>
